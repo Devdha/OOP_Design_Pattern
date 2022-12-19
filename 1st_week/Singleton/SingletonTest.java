@@ -6,4 +6,5 @@ public class SingletonTest {
     Singleton instanceB = Singleton.getInstance();
     System.out.println(instanceA == instanceB);
   }
-}#static
+}
+// #static
