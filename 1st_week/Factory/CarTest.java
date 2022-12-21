@@ -10,5 +10,5 @@ public abstract class CarTest {
 		Car grandeur = grandeurTest.produceCar();
 	}
 
-	abstract Car produceCar();
+	public abstract Car produceCar();
 }
