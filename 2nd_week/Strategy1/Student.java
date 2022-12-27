@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Student {
   int studentID;
   String studentName;
@@ -19,7 +21,7 @@ public class Student {
 
   public void showGradeInfo() {
     for (Subject subject : subjectList) {
-      System.out.print("학생 " + studentName + "의 " + subject.toString());
+      System.out.println("학생 " + studentName + "의 " + subject.toString());
     }
   }
 }

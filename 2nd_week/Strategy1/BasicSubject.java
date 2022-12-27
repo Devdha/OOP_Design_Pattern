@@ -37,6 +37,10 @@ public class BasicSubject implements Subject {
     this.scorePoint = scorePoint;
   }
 
+  public char getGrade() {
+    return this.grade;
+  }
+
   public boolean isMajorCode() {
     return this.majorCode;
   }
