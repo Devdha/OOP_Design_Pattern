@@ -1,0 +1,2 @@
+- 관찰하기보다 전달 받기를 기다림 : `notifyObservers()`
+- Publish-Subscribe 패턴이라고도 불린다.
