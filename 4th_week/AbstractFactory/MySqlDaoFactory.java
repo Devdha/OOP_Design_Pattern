@@ -1,10 +1,11 @@
-public class MySqlDaoFactory extends DaoFactory{
+public class MySqlDaoFactory extends DaoFactory {
     @Override
     public UserInfoDao createUserInfoDao() {
-        return new UserInfoMySqlDao(); 
+        return new MySqlUserInfoDao();
     }
+
     @Override
     public ProductDao createProductDao() {
-        return new ProductMySqlDao(); 
+        return new MySqlProductDao();
     }
 }

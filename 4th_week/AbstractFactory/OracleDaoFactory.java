@@ -1,10 +1,11 @@
-public class OracleDaoFactory extends DaoFactory{
+public class OracleDaoFactory extends DaoFactory {
     @Override
     public UserInfoDao createUserInfoDao() {
-        return new UserInfoOracleDao(); 
+        return new OracleUserInfoDao();
     }
+
     @Override
     public ProductDao createProductDao() {
-        return new ProductOracleDao(); 
+        return new OracleProductDao();
     }
 }
