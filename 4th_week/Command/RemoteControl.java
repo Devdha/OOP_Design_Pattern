@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class RemoteControl {
     private ArrayList<Command> onCommands;
     private ArrayList<Command> offCommands;
@@ -7,9 +9,13 @@ public class RemoteControl {
         offCommands = new ArrayList<Command>();
     }
 
-    public toString() {
+    public String toString() {
+        String str = "";
         for (int i = 0; i < onCommands.size(); i++) {
-            System.out.println(i + ", " + onCommands.get(i).getClass().getName() + ", " + offCommands.get(i).getClass().getName());
+            str += (i + ", " + onCommands.get(i).getClass().getName() + ", " + offCommands.get(i).getClass().getName()
+                    + "\n");
+        }
+        return str;
     }
 
     public void setCommand(int index, Command onCommand, Command offCommand) {
