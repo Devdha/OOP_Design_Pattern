@@ -7,6 +7,11 @@ public class RemoteControl {
         offCommands = new ArrayList<Command>();
     }
 
+    public toString() {
+        for (int i = 0; i < onCommands.size(); i++) {
+            System.out.println(i + ", " + onCommands.get(i).getClass().getName() + ", " + offCommands.get(i).getClass().getName());
+    }
+
     public void setCommand(int index, Command onCommand, Command offCommand) {
         onCommands.add(index, onCommand);
         offCommands.add(index, offCommand);
