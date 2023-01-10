@@ -1,5 +1,11 @@
+import java.util.*;
+
 public class Category extends ProductCategory {
     private List<ProductCategory> products = new ArrayList<ProductCategory>();
+
+    public Category(int id, String name, int price) {
+        super(id, name, price);
+    }
 
     public void addProduct(ProductCategory product) {
         products.add(product);
@@ -32,4 +38,4 @@ public class Category extends ProductCategory {
     public int getId() {
         return id;
     }
-  }
+}
